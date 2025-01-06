@@ -24,6 +24,7 @@ span.name-span {
   margin-bottom: 10px;
 }
 .card.header {
+  padding-top: 0px;
   padding-bottom: 20px;
 }
 @media screen and (min-width: 880px) {
@@ -150,7 +151,16 @@ span.highlight, a.highlight {
   display: inline;
 }
 
-span.highlight-2 {
+span.highlight-green, a.highlight-green {
+  font-weight: bold;
+  background: linear-gradient(90deg, #0a0, #0b0, #0c0, #0a0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline;
+}
+
+span.highlight-2, a.highlight-2 {
   font-weight: bold;
   background: linear-gradient(90deg, #006, #226, #006);
   -webkit-background-clip: text;
@@ -169,8 +179,32 @@ span.highlight-2 {
 img.mpi-photo {
   margin-top: 20px;
   width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 170px;
 }
 
 p.more-info {
   font-size: 200%;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+div.members {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.member-card {
+  padding-right: 10px;
+  width: 180px;
+}
+
+div.member-card > img {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
 }

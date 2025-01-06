@@ -32,7 +32,6 @@ div.posts .excerpt {
 }
 div.main:first-child {
   margin-top: 20px;
-  border-top: 1px solid #999;
 }
 div.main:last-child {
   margin-bottom: 40px;

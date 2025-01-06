@@ -5,7 +5,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Andrea Lattuada</title>
+    <title>Principled Systems</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/base.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
@@ -19,11 +19,88 @@
     <div class="container">
       <div class="hero">
         <div class="main relative card header">
-          <h1>Principled Systems @ MPI-SWS</h1>
+        <div style="width: 300px; float:right; position: absolute; right: 15px; top: 5px;">
+          <img src="assets/mpi-sws-logo.svg" alt="MPI-SWS Logo" style="width: 300px;" />
+        </div>
+          <h1><img height="32pt" src="assets/principled-systems.png" alt="Principled Systems Logo" style="display:inline; vertical-align:middle; margin-top: -4pt;" />
+              <span class="highlight-green">Principled Systems Group</span></h1>
+              <p style="margin-bottom: 0"><a href="https://www.mpi-sws.org/">Max Planck Institute for Software Systems</a></p>
           <img class="mpi-photo" src="assets/MPI-photo.jpeg" />
         </div>
         <div class="main relative card">
-          <p class="more-info">More information at <a href="https://andrea.lattuada.me">andrea.lattuada.me</a></p>
+          <p>The <span class="highlight">Principled Systems Group</span> at the <a href="https://www.mpi-sws.org">Max Planck Institute for Software Systems (MPI-SWS)</a> is led by <a href="https://andrea.lattuada.me">Andrea Lattuada</a>.
+            We design, implement, and verify systems software, construed broadly<sup id="footnote1">[1]</sup> and focus on the advancement of verification tooling and methodology for systems verification.
+          </p>
+          <p>
+            We are interested in <span class="highlight">systems software verification</span> as a way to substantially improve their safety and reliability, but to achieve this, the verification effort must be commensurate to the value it provides. I build verified systems, and extend the available tooling to find and fix inefficiencies.</p>
+          </p>
+          <p class="ad">Jointly with <a href="https://people.mpi-sws.org/~dreyer/">Derek Dreyer</a>'s group, we have <b>open positions for PhD Students and Postdocs</b> who are interested in working on <span class="highlight">Systems Software Verification</span>, in particular focusing on making verification more practical and usable by engineers and on devising and leveraging advanced reasoning techniques. See my <a href="https://andrea.lattuada.me">research profile</a> for more details on my work, and feel free to get in touch.</p>
+          <p>Contact:
+          <span class="clickable" id="mpi-email-reveal"><a>(click to reveal)</a>@mpi-sws.org</span>
+          <script language="JavaScript">
+            let mpi_element_reveal = document.getElementById('mpi-email-reveal');
+            mpi_element_reveal.onclick = () => {
+              let user = 'andrea';
+              let site = 'mpi-sws.org';
+              console.log(mpi_element_reveal);
+              mpi_element_reveal.innerHTML = '<a href=\"mailto:' + user + '@' + site + '\">' + user + '@' + site + '</a>';
+              mpi_element_reveal.onclick = null;
+            };
+          </script>
+          </p>
+        </div>
+        <div class="main relative card">
+          <h2>Members</h2>
+          <div class="members">
+            <div class="member-card">
+              <img src="assets/people/andrea-lattuada.jpg" />
+              <div class="member-info">
+                <h3>Andrea Lattuada</h3>
+                <p>Group Leader</p>
+                <p><a href="https://andrea.lattuada.me">Website</a></p>
+              </div>
+            </div>
+
+            <div class="member-card">
+              <img src="assets/people/travis-hance.jpg" />
+              <div class="member-info">
+                <h3>Travis Hance</h3>
+                <p>Postdoctoral Researcher<br/>(joining in January 2025)</p>
+                <p><a href="https://csd.cmu.edu/academics/doctoral/degrees-conferred/travis-hance">Website</a></p>
+              </div>
+            </div>
+
+            <div class="member-card">
+              <img style="object-position: top" src="https://www.eecs.tufts.edu/~abai02/profile-pic.jpeg" />
+              <div class="member-info">
+                <h3>Alexander Bai</h3>
+                <p>Research Intern<br/>(joining in January 2025)</p>
+                <p><a href="https://www.eecs.tufts.edu/~abai02/">Website</a></p>
+              </div>
+            </div>
+          </div>
+          <h2 style="margin-top: 20px;">Affiliated Researchers and Collaborators</h2>
+          <div class="members">
+            <div class="member-card">
+              <img src="https://matthias-brun.ch/assets/foto.jpg" />
+              <div class="member-info">
+                <h3>Matthias Brun</h3>
+                <p>PhD Student<br/>Assistant Researcher<br/>ETH Zurich</p>
+                <p><a href="https://matthias-brun.ch">Website</a></p>
+              </div>
+            </div>
+            <div class="member-card">
+              <img src="https://www.johanna-polzin.ch/pictures/me.jpg" />
+              <div class="member-info">
+                <h3>Johanna Polzin</h3>
+                <p>Bachelor Student in Computer Science<br/>ETH Zurich</p>
+                <p><a href="https://www.johanna-polzin.ch">Website</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="maiin relative card footnote">
+        <sup id="footnote1">[1]</sup> Inspired by <a href="https://systopia.cs.ubc.ca">Systopia</a>'s definition of the scope of Systems research.
         </div>
     </div>
   </body>
