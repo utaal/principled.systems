@@ -10,11 +10,18 @@ div.hero {
   margin-right: 30px;
 }
 h1#title {
-  display: none;
-  margin-top: 20px;
-  text-shadow: #666 2px -2px 4px;
-  color: white;
-  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(90deg, #0a0, #0b0, #0c0, #0a0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 2em;
+}
+.mpi-sws-logo {
+  width: 300px; float:right; position: absolute; right: 15px; top: 5px;
+}
+.mpi-sws-logo img {
+  width: 300px;
 }
 span.name-span {
   font-weight: bold;
@@ -47,9 +54,19 @@ span.name-span {
   }
   div.base_header {
   }
+  .mpi-sws-logo {
+    float: none;
+    width: 200px;
+    position: inherit;
+    margin: 0 auto;
+  }
+  .mpi-sws-logo > img {
+    width: 200px;
+  }
 }
 @media screen and (max-width: 660px) {
 }
+
 p {
   padding: 0px;
   margin: 5px 0px 0px 0px;
@@ -176,6 +193,13 @@ span.highlight-2, a.highlight-2 {
   background-color: #ffff88;
 }
 
+.ad-2 {
+  border: 1px solid black;
+  padding: 4px;
+  margin-left: -4px;
+  background-color: #C0D4E6;
+}
+
 img.mpi-photo {
   margin-top: 20px;
   width: 100%;
@@ -199,6 +223,7 @@ div.members {
 
 div.member-card {
   padding-right: 10px;
+  padding-bottom: 10px;
   width: 180px;
 }
 
