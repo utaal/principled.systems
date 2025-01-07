@@ -29,11 +29,18 @@
           <img class="mpi-photo" src="assets/MPI-photo.jpeg" />
         </div>
         <div class="main relative card">
+          <nav class="horizontal-nav">
+            <a href="#aboutus">About Us</a>
+            <a href="#members">Members</a>
+            <a href="#papers">Peer-reviewed publications</a>
+          </nav>
+        </div>
+        <div id="aboutus" class="main relative card">
           <p>The <span class="highlight">Principled Systems Group</span> at the <a href="https://www.mpi-sws.org">Max Planck Institute for Software Systems (MPI-SWS)</a> is led by <a href="https://andrea.lattuada.me">Andrea Lattuada</a>.
             We design, implement, and verify systems software, construed broadly<sup id="footnote1">[1]</sup> and focus on the advancement of verification tooling and methodology for systems verification.
           </p>
           <p>
-            We are interested in <span class="highlight">systems software verification</span> as a way to substantially improve their safety and reliability, but to achieve this, the verification effort must be commensurate to the value it provides. I build verified systems, and extend the available tooling to find and fix inefficiencies.</p>
+            We are interested in <span class="highlight">systems software verification</span> as a way to substantially improve their safety and reliability, but to achieve this, the verification effort must be commensurate to the value it provides. We build (verified) systems, and extend the available tooling to find and fix inefficiencies.</p>
           </p>
           <p class="ad" style="margin-top: 12pt;">Jointly with <a href="https://people.mpi-sws.org/~dreyer/">Derek Dreyer</a>'s group, we have <b>open positions for PhD Students and Postdocs</b> who are interested in working on <span class="highlight">Systems Software Verification</span>, in particular focusing on making verification more practical and usable by engineers and on devising and leveraging advanced reasoning techniques. See my <a href="https://andrea.lattuada.me">research profile</a> for more details on my work, and feel free to get in touch.</p>
           <p style="margin-top: 12pt; margin-bottom: 12pt;">Contact:
@@ -58,7 +65,7 @@
           The Verus project involves members from VMware Research, Microsoft Research, Carnegie Mellon University, ETH Zurich, University of Washington, University of Michigan, University of Wisconsin-Madison, and others.
           There are a number of research and industry projects using and developing Verus: <a href="https://verus-lang.github.io/verus/publications-and-projects/">verus-lang.github.io/verus/publications-and-projects/</a>.</p>
         </div>
-        <div class="main relative card">
+        <div id="members" class="main relative card">
           <h2>Members</h2>
           <div class="members">
             <div class="member-card">
@@ -124,7 +131,52 @@
             </div>
           </div>
         </div>
-        <div class="maiin relative card footnote">
+        <div id="papers" class="main relative card">
+          <h3>Recent Peer-reviewed Publications</h3>
+          <ul class="resume">
+            <li>
+                <div class="publication-year">SOSP 2024 ⸺<span style="font-weight: bold"> Distinguished Artifact Award</span></div>
+                <div><a href="https://dl.acm.org/doi/10.1145/3694715.3695952" class="paper-title">Verus: A Practical Foundation for Systems Verification</a>, Andrea Lattuada, Travis Hance, Jay Bosamiya, Matthias Brun, Chanhee Cho, Hayley LeBlanc, Pranav Srinivasan, Reto Achermann, Tej Chajed, Chris Hawblitzel, Jon Howell, Jacob R. Lorch, Oded Padon, Bryan Parno</div>
+                <div style="display: inline-block" class="publication-location">The 30th Symposium on Operating Systems Principles</div>
+            </li>
+            <li>
+                <div class="publication-year">OSDI 2024 ⸺<span style="font-weight: bold"> Jay Lepreau Best Paper Award</span></div>
+                <div><a href="https://www.usenix.org/conference/osdi24/presentation/sun-xudong" class="paper-title">Anvil: Verifying Liveness of Cluster Management Controllers</a>, Xudong Sun, Wenjie Ma, Jiawei Tyler Gu, Zicheng Ma, Tej Chajed, Jon Howell, Andrea Lattuada, Oded Padon, Lalith Suresh, Adriana Szekeres, Tianyin Xu</div>
+                <div style="display: inline-block" class="publication-location">18th USENIX Symposium on Operating Systems Design and Implementation</div>
+            </li>
+            <li>
+              <div class="resume-year">OOPSLA 2023</div>
+              <div><a href="https://doi.org/10.1145/3586037" class="paper-title">Verus: Verifying Rust Programs using Linear Ghost Types</a>, Andrea Lattuada, Travis Hance, Chanhee Cho, Matthias Brun, Isitha Subasinghe, Yi Zhou, Jon Howell, Bryan Parno, Chris Hawblitzel</div>
+              <div style="display: inline-block" class="resume-location">Proceedings of the ACM on Programming Languages</div>
+            </li>
+            <li>
+              <div class="resume-year">HotOS 2023</div>
+              <div><a href="assets/hotos23-beyond-isolation.pdf" class="paper-title">Beyond isolation: OS verification as a foundation for correct applications</a>, Matthias Brun, Reto Achermann, Tej Chajed, Jon Howell, Gerd Zellweger, Andrea Lattuada</div>
+              <div style="display: inline-block" class="resume-location">The 19th Workshop on Hot Topics in Operating Systems</div>
+            </li>
+            <li>
+              <div class="resume-year">OSDI 2023</div>
+              <div><a href="https://www.usenix.org/conference/osdi23/presentation/hance" class="paper-title">Sharding the State Machine: Automated Modular Reasoning for Complex Concurrent Systems</a>, Travis Hance, Yi Zhou, Andrea Lattuada, Reto Achermann, Alex Conway, Ryan Stutsman, Gerd Zellweger, Chris Hawblitzel, Jon Howell, Bryan Parno</div>
+              <div style="display: inline-block" class="resume-location">17th USENIX Symposium on Operating Systems Design and Implementation </div>
+            </li>
+            <li>
+              <div class="resume-year">OOPSLA 2022 ⸺<span style="font-weight: bold"> Distinguished Paper Award</span></div>
+              <div><a href="https://doi.org/10.1145/3527313" class="paper-title">Linear Types for Large-Scale Systems Verification</a>, Jialin Li, Andrea Lattuada, Yi Zhou, Jonathan Cameron, Jon Howell, Bryan Parno, Chris Hawblitzel</div>
+              <div style="display: inline-block" class="resume-location">Proceedings of the ACM on Programming Languages </div>
+            </li>
+            <li>
+              <div class="resume-year">ITP 2021</div>
+              <div><a href="https://drops.dagstuhl.de/opus/volltexte/2021/13905/pdf/LIPIcs-ITP-2021-10.pdf" class="paper-title">Verified Progress Tracking for Timely Dataflow</a> [<a href="https://github.com/matthias-brun/progress-tracking-formalization/raw/main/rep.pdf">Technical Report</a>], Matthias Brun, Sára Decova, Andrea Lattuada, Dmitriy Traytel</div>
+              <div style="display: inline-block" class="resume-location">The International Conference on Interactive Theorem Proving</div>
+            </li>
+            <li>
+              <div class="resume-year">OSDI 2020</div>
+              <div><a class="paper-title" href="https://www.usenix.org/conference/osdi20/presentation/hance">Storage Systems are Distributed Systems (So Verify Them That Way!)</a>, Travis Hance, Andrea Lattuada, Chris Hawblitzel, Jon Howell, Rob Johnson, Bryan Parno</div>
+              <div style="display: inline-block" class="resume-location">14th USENIX Symposium on Operating Systems Design and Implementation</div>
+            </li>
+          </ul>
+        </div>
+        <div class="main relative card footnote" style="padding-bottom: 12pt;"">
         <sup id="footnote1">[1]</sup> Inspired by <a href="https://systopia.cs.ubc.ca">Systopia</a>'s definition of the scope of Systems research.
         </div>
     </div>
