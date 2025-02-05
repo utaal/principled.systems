@@ -226,6 +226,24 @@ h2 {
   margin-bottom: 20px;
 }
 
+div.news-item:not(:first-child) {
+  padding-top: 20px;
+}
+
+div.news-item:not(:last-child) {
+  border-bottom: 1px dotted #999;
+  padding-bottom: 20px;
+}
+
+div.news-item img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  float: left;
+  margin-right: 20px;
+}
+
 div.members {
   display: flex;
   flex-wrap: wrap;
